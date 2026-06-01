@@ -9,7 +9,7 @@ import Sarathy from "../assets/Sarathy.png"
 import Aswanimadom from "../assets/Aswanimadom.png"
 import H from "../assets/h2o.png"
 // import flywheel from "../assets/FlyWheel.png"
-import Automotive from "../assets/Automotive.png"
+// import Automotive from "../assets/Automotive.png"
 import finespace from "../assets/finespace.png"
 import luxon from "../assets/Luxon.png"
 import Jayabharatham from "../assets/Jayabharatham.png"
@@ -34,7 +34,7 @@ const brands = [
   { name: "H2o",   src: H,    industry: "Technology" },
   // { name: "flywheel",      src: flywheel,    industry: "Exhibition" },
   { name: "finespace",      src: finespace,    industry: "Events", },
-  { name: "Automotive",      src: Automotive,    industry: "Automotive",},
+  // { name: "Automotive",      src: Automotive,    industry: "Automotive",},
   { name: "Luxon",      src: luxon,    industry: "Real Estate",},
   { name: "Jayabharatham",      src: Jayabharatham,    industry: "Events", scale: "scale-150" },
   { name: "Tata",      src: Tata,    industry: "Automotive", scale: "scale-125" },
