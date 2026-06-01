@@ -22,7 +22,7 @@ import Dheemahi from "../assets/Dheemahi.png"
 import Goec from "../assets/goec.png"
 import Supreme from "../assets/Supreme.png"
 import Palathra from "../assets/Palathraa.png"
-import Kinder from "../assets/Kinder.png"
+import Kinder from "../assets/Kinder.PNG"
 
 const brands = [
   { name: "Forum Mall",      src: Forum,   industry: "Retail & Hospitality", invert: true },
