@@ -21,7 +21,7 @@ import Ushas from "../assets/Ushas.png"
 import Dheemahi from "../assets/Dheemahi.png"
 import Goec from "../assets/goec.png"
 import Supreme from "../assets/Supreme.png"
-import Palathra from "../assets/Palathra.png"
+import Palathra from "../assets/Palathraa.png"
 import Kinder from "../assets/Kinder.png"
 
 const brands = [
