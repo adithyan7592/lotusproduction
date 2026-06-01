@@ -8,7 +8,7 @@ import Ashtamudi from "../assets/Ashtamudi.png"
 import Sarathy from "../assets/Sarathy.png"
 import Aswanimadom from "../assets/Aswanimadom.png"
 import H from "../assets/h2o.png"
-import flywheel from "../assets/FlyWheel.png"
+// import flywheel from "../assets/FlyWheel.png"
 import Automotive from "../assets/Automotive.png"
 import finespace from "../assets/finespace.png"
 import luxon from "../assets/Luxon.png"
@@ -32,7 +32,7 @@ const brands = [
   { name: "Sarathy",       src: Sarathy,    industry: "Events",},
   { name: "Aswanimadom",   src: Aswanimadom, industry: "Lifestyle",},
   { name: "H2o",   src: H,    industry: "Technology" },
-  { name: "flywheel",      src: flywheel,    industry: "Exhibition" },
+  // { name: "flywheel",      src: flywheel,    industry: "Exhibition" },
   { name: "finespace",      src: finespace,    industry: "Events", },
   { name: "Automotive",      src: Automotive,    industry: "Automotive",},
   { name: "Luxon",      src: luxon,    industry: "Real Estate",},
