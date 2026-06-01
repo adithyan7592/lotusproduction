@@ -88,41 +88,39 @@ export default function Home() {
       {/* ============================================================
           PORTFOLIO GRID
       ============================================================ */}
-      <section className="py-32 relative z-10">
+      <section className="py-16 md:py-32 relative z-10">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex flex-col items-center mb-20 text-center fade-up">
-            <h2 className="text-5xl font-bold tracking-tight uppercase">Selected Works</h2>
+            <h2 className="text-4xl font-bold tracking-tight uppercase font-serif italic">Selected Works</h2>
             <div className="h-[2px] w-24 bg-[#00df9a] mt-6" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
             {/* Replace image/video with actual paths from your /public folder */}
-            <PortfolioCard title="Factory Shoots" image="/thumbs/factory.jpg" video="/videos/factory.mp4" />
-            <PortfolioCard title="Corporate Event" image="/thumbs/corporate.jpg" video="/videos/corporate.mp4" />
-            <PortfolioCard title="Drone Shoots" image="/thumbs/drone.jpg" video="/videos/drone.mp4" />
-            <PortfolioCard title="Showroom Facilities" image="/thumbs/showroom.jpg" video="/videos/showroom.mp4" />
-            <PortfolioCard title="Amruthika" image="/thumbs/amruthika.jpg" video="/videos/amruthika.mp4" />
-            <PortfolioCard title="Gaming Video" image="/thumbs/gaming.jpg" video="/videos/gaming.mp4" />
+            <PortfolioCard title="Factory Shoots" image="/thumbs/Factory.jpg" video="/videos/factory.mp4" />
+            <PortfolioCard title="Corporate Events" image="/thumbs/Corporate.jpg" video="/videos/corporate.mp4" />
+            <PortfolioCard title="Drone Shoots" image="/thumbs/Droneshots.jpg" video="/videos/drone.mp4" />
+            <PortfolioCard title="Showroom Facilities" image="/thumbs/Showroom.jpg" video="/videos/showroom.mp4" />
+            <PortfolioCard title="Ayurvedha Wellness" image="/thumbs/Amruthika.jpg" video="/videos/amruthika.mp4" />
+            <PortfolioCard title="Restaurant" image="/thumbs/Restaurant.jpg" video="/videos/restaurant.mp4" />
+            
           </div>
         </div>
       </section>
-
-      {/* ============================================================
-          FEATURED CASE — Spotlight Style
-      ============================================================ */}
-      <section className="bg-zinc-950 py-32 border-y border-white/5">
+      <section className="bg-zinc-950 py-16 md:py-32 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
-          <div className="fade-up aspect-video rounded-sm bg-zinc-900 flex items-center justify-center border border-white/10 shadow-2xl overflow-hidden relative group cursor-pointer">
-            {/* Replace with an actual video thumbnail */}
-            <span className="text-[#00df9a]/50 uppercase tracking-widest text-sm font-bold italic z-10">
-              Featured Reel
-            </span>
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="w-16 h-16 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-2xl backdrop-blur-sm">
-                ▶
-              </div>
-            </div>
-          </div>
+    <div className="relative aspect-video rounded-sm overflow-hidden border border-white/10 shadow-2xl group cursor-pointer">
+  <img 
+    src="/thumbs/Featured.jpg" 
+    alt="Featured Reel"
+    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+  />
+  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+    <div className="w-16 h-16 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-2xl backdrop-blur-sm">
+      ▶
+    </div>
+  </div>
+</div>
 
           <div className="fade-up">
             <h3 className="text-4xl font-bold mb-6 italic tracking-tight uppercase">
@@ -140,27 +138,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============================================================
-          SERVICES STRIP — New section
-      ============================================================ */}
-      <section className="py-24 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 fade-up">
-            {[
-              { num: "01", title: "Drone Cinematography", desc: "Aerial perspectives that tell stories from above." },
-              { num: "02", title: "Corporate Production", desc: "Professional brand films and event documentation." },
-              { num: "03", title: "Event Highlights", desc: "Capturing moments that last a lifetime." },
-              { num: "04", title: "Post Production", desc: "Color grading and editing to cinematic standards." },
-            ].map((s) => (
-              <div key={s.num} className="border-t border-zinc-800 pt-6">
-                <span className="text-[#00df9a] text-xs font-black">{s.num}</span>
-                <h4 className="text-sm font-bold uppercase tracking-wide mt-3 mb-3">{s.title}</h4>
-                <p className="text-zinc-500 text-xs leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
+  {/* SERVICES STRIP */}
+<section className="py-16 border-b border-white/5">
+  <div className="max-w-7xl mx-auto px-8">
+
+    {/* Heading */}
+    <div className="mb-12">
+      <p className="text-[#00df9a] text-[10px] uppercase tracking-[0.5em] font-bold mb-3">What We Do</p>
+      <h2 className="text-4xl md:text-5xl font-serif italic">Our Services</h2>
+    </div>
+
+
+    {/* Service Cards */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {[
+        { num: "01", title: "Drone Cinematography", desc: "Aerial perspectives that tell stories from above." },
+        { num: "02", title: "Corporate Production", desc: "Professional brand films and event documentation." },
+        { num: "03", title: "Event Highlights", desc: "Capturing moments that last a lifetime." },
+        { num: "04", title: "Post Production", desc: "Color grading and editing to cinematic standards." },
+      ].map((s) => (
+        <div
+          key={s.num}
+          className="border-t border-zinc-800 pt-6 group hover:border-[#00df9a] transition-all duration-300 cursor-pointer"
+        >
+          <span className="text-[#00df9a] text-xs font-black">{s.num}</span>
+          <h4 className="text-sm  uppercase tracking-wide mt-3 mb-3 group-hover:text-[#00df9a] transition-colors duration-300 font-serif italic">
+            {s.title}
+          </h4>
+          <p className="text-zinc-500 text-xs leading-relaxed">{s.desc}</p>
+          <span className="text-[10px] uppercase tracking-widest text-[#00df9a] mt-4 opacity-0 group-hover:opacity-100 block transition-all duration-300">
+            Learn More →
+          </span>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* View All Button */}
+    <div className="mt-12 text-center">
+      <Link to="/services">
+        <button className="px-10 py-3 border border-[#00df9a] text-[#00df9a] uppercase text-xs tracking-[0.3em] font-bold hover:bg-[#00df9a] hover:text-black transition-all duration-500">
+          View All Services
+        </button>
+      </Link>
+    </div>
+
+  </div>
+</section>
 
       {/* ============================================================
           CTA — Closing Scene

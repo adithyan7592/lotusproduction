@@ -5,7 +5,7 @@ import PortfolioCard from "../components/PortfolioCard"
 
 const projects = [
   { id: 1, title: "Factory Shoots", category: "Industrial", year: "2025", image: "/thumbs/factory.jpg", video: "/videos/factory.mp4" },
-  { id: 2, title: "Corporate Event", category: "Corporate", year: "2025", image: "/thumbs/corporate.jpg", video: "/videos/corporate.mp4" },
+  { id: 2, title: "Corporate Event", category: "Corporate", year: "2025", image: "/thumbs/Corporate.jpg", video: "/videos/corporate.mp4" },
   { id: 3, title: "Drone Shoots", category: "Aerial", year: "2024", image: "/thumbs/drone.jpg", video: "/videos/drone.mp4" },
   { id: 4, title: "Showroom Facilities", category: "Commercial", year: "2024", image: "/thumbs/showroom.jpg", video: "/videos/showroom.mp4" },
   { id: 5, title: "Amruthika", category: "Event", year: "2024", image: "/thumbs/amruthika.jpg", video: "/videos/amruthika.mp4" },
@@ -55,7 +55,7 @@ export default function Portfolio() {
             { num: "3+", label: "Years Experience" },
           ].map((stat) => (
             <div key={stat.label}>
-              <h3 className="text-4xl font-black text-white">{stat.num}</h3>
+              <h3 className="text-4xl font-black text-[#00df9a]">{stat.num}</h3>
               <p className="text-[10px] uppercase text-zinc-500 tracking-widest mt-2">{stat.label}</p>
             </div>
           ))}

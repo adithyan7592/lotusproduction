@@ -4,19 +4,50 @@ import { fadeUp } from "../animations/gsap"
 import Forum from "../assets/Forum.png"
 import Lexus from "../assets/lexux.png"
 import Muthoot from "../assets/Muthoot.png"
+import Ashtamudi from "../assets/Ashtamudi.png"
+import Sarathy from "../assets/Sarathy.png"
+import Aswanimadom from "../assets/Aswanimadom.png"
+import H from "../assets/h2o.png"
+import flywheel from "../assets/flywheel.png"
+import Automotive from "../assets/Automotive.png"
+import finespace from "../assets/finespace.png"
+import luxon from "../assets/Luxon.png"
+import Jayabharatham from "../assets/Jayabharatham.png"
+import MOUDLE from "../assets/MOUDLE 5.png"
+import Plantis from "../assets/Plantis.png"
+import Kia from "../assets/IncheonKia.png"
+import Tata from "../assets/Muthoot tata.png"
+import Ushas from "../assets/Ushas.png"
+import Dheemahi from "../assets/Dheemahi.png"
+import Goec from "../assets/goec.png"
+import Supreme from "../assets/Supreme.png"
+import Palathra from "../assets/Palathra.png"
+import Kinder from "../assets/Kinder.png"
 
-// ─── Brand data ───────────────────────────────────────────────────────────────
-// Add more brands here as you grow. For logos you don't have yet, leave src: null
-// and a placeholder letter-avatar will render instead.
 const brands = [
-  { name: "Forum Mall",      src: Forum,   industry: "Retail & Hospitality" },
-  { name: "Lexus Motors",    src: Lexus,   industry: "Automotive" },
+  { name: "Forum Mall",      src: Forum,   industry: "Retail & Hospitality", invert: true },
+  { name: "Lexus Motors",    src: Lexus,   industry: "Automotive", invert: true },
   { name: "Muthoot Finance", src: Muthoot, industry: "Finance" },
-  { name: "Kerala Tourism",  src: null,    industry: "Tourism" },
-  { name: "Amruthika",       src: null,    industry: "Events" },
-  { name: "CitySurf Co.",    src: null,    industry: "Lifestyle" },
-  { name: "TechSummit IN",   src: null,    industry: "Technology" },
-  { name: "Kochi Expo",      src: null,    industry: "Exhibition" },
+  { name: "Ashtamudi",  src: Ashtamudi,    industry: "Tourism" },
+  { name: "Sarathy",       src: Sarathy,    industry: "Events",},
+  { name: "Aswanimadom",   src: Aswanimadom, industry: "Lifestyle",},
+  { name: "H2o",   src: H,    industry: "Technology" },
+  { name: "flywheel",      src: flywheel,    industry: "Exhibition" },
+  { name: "finespace",      src: finespace,    industry: "Events", },
+  { name: "Automotive",      src: Automotive,    industry: "Automotive",},
+  { name: "Luxon",      src: luxon,    industry: "Real Estate",},
+  { name: "Jayabharatham",      src: Jayabharatham,    industry: "Events", scale: "scale-150" },
+  { name: "Tata",      src: Tata,    industry: "Automotive", scale: "scale-125" },
+  { name: "Kia",      src: Kia,    industry: "Automotive",},
+  { name: "MOUDLE",      src: MOUDLE,    industry: "Real Estate",},
+  { name: "Plantis",      src: Plantis,    industry: "Real Estate",},
+  { name: "Ushas",      src: Ushas,    industry: "Education", scale: "scale-125",invert: true},
+  { name: "Dheemahi",      src: Dheemahi,    industry: "Education",},
+  { name: "Goec",      src: Goec,    industry: "Education",},
+  { name: "Supreme",      src: Supreme,    industry: "FMCG",},
+  { name: "Palathra",      src: Palathra,    industry: "FMCG",},
+  { name: "Kinder",      src: Kinder,    industry: "FMCG",},
+
 ]
 
 // ─── Testimonials ─────────────────────────────────────────────────────────────
@@ -85,15 +116,15 @@ export default function TrustedBy() {
         <div className=" grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 pb-16 border-b border-zinc-800">
           {stats.map((s) => (
             <div key={s.label}>
-              <h3 className="text-4xl md:text-5xl font-black text-white">{s.value}</h3>
+              <h3 className="text-4xl md:text-5xl font-black text-[#00df9a]">{s.value}</h3>
               <p className="text-[10px] uppercase text-zinc-500 tracking-widest mt-2">{s.label}</p>
             </div>
           ))}
         </div>
 
         {/* ── Logo Wall ───────────────────────────────────────────────── */}
-        <div className="fade-up mb-24">
-          <p className="text-zinc-600 text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
+        <div className=" mb-24">
+          <p className="text-[#00df9a] text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
             Brands We've Worked With
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-zinc-800">
@@ -102,34 +133,27 @@ export default function TrustedBy() {
                 key={brand.name}
                 className="group bg-[#050505] flex flex-col items-center justify-center gap-4 py-12 px-8 hover:bg-zinc-900 transition-colors duration-300"
               >
-                {brand.src ? (
-                  <img
-                    src={brand.src}
-                    alt={brand.name}
-                    className="h-14 max-w-[120px] object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
-                  />
-                ) : (
+               {brand.src ? (
+  <img
+    src={brand.src}
+    alt={brand.name}
+   className={`h-20 max-w-[200px] object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 ${brand.invert ? "invert" : ""} ${brand.scale || 'scale-100'}`}
+  />
+) : (
                   // Letter avatar for brands without a logo yet
                   <div className="w-14 h-14 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-[#00df9a] text-xl font-black group-hover:border-[#00df9a]/40 transition-all duration-300">
                     {brand.name.charAt(0)}
                   </div>
                 )}
-                <div className="text-center">
-                  <p className="text-white text-xs font-bold uppercase tracking-wide group-hover:text-[#00df9a] transition-colors duration-300">
-                    {brand.name}
-                  </p>
-                  <p className="text-zinc-600 text-[9px] uppercase tracking-widest mt-1">
-                    {brand.industry}
-                  </p>
-                </div>
+
               </div>
             ))}
           </div>
         </div>
 
         {/* ── Testimonials ────────────────────────────────────────────── */}
-        <div className="fade-up mb-24">
-          <p className="text-zinc-600 text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
+        <div className="mb-24">
+          <p className="text-[#00df9a] text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
             What They Say
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -155,8 +179,8 @@ export default function TrustedBy() {
         </div>
 
         {/* ── Industries Served ───────────────────────────────────────── */}
-        <div className="fade-up mb-24 pb-16 border-b border-zinc-800">
-          <p className="text-zinc-600 text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
+        <div className="mb-24 pb-16 border-b border-zinc-800">
+          <p className="text-[#00df9a] text-[10px] uppercase tracking-[0.4em] font-bold mb-10">
             Industries We Serve
           </p>
           <div className="flex flex-wrap gap-3">
@@ -176,7 +200,7 @@ export default function TrustedBy() {
         </div>
 
         {/* ── CTA ─────────────────────────────────────────────────────── */}
-        <div className="fade-up text-center">
+        <div className="text-center">
           <p className="text-zinc-500 text-xs uppercase tracking-[0.4em] mb-4">
             Join the list
           </p>

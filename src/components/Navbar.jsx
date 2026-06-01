@@ -46,7 +46,7 @@ export default function Navbar() {
               <li key={link.name}>
                 <Link
                   to={link.path}
-                  className="text-4xl md:text-5xl uppercase tracking-[0.3em] font-black italic text-white hover:text-[#00df9a] transition-all block py-2"
+                  className="text-3xl md:text-5xl uppercase tracking-[0.1em] font-black italic text-white hover:text-[#00df9a] transition-all block py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-bold">
+        <ul className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-bold italic">
           {navLinks.map((link) => (
             <li key={link.name}>
               <Link to={link.path} className="text-white hover:text-[#00df9a] transition-all">
