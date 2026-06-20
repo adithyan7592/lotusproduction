@@ -55,7 +55,7 @@ Kochi, Kerala 682025
     {[
       { icon: <FaFacebookF />, link: "https://facebook.com/yourprofile" },
       { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCPgpIrCnSM_wYQYtj6rY95A" },
-      { icon: <FaInstagram />, link: "https://www.instagram.com/_lotuspro?igsh=MW54NHM4ajRiZ2EyYw%3D%3D&utm_source=qr" },
+      { icon: <FaInstagram />, link: "https://www.instagram.com/lotuspro.in?igsh=MW54NHM4ajRiZ2EyYw%3D%3D&utm_source=qr" },
       { icon: <FaWhatsapp />, link: "https://wa.me/+919496057855" },
     ].map((social, index) => (
       <a

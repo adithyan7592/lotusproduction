@@ -46,35 +46,40 @@ export default function Home() {
         <div className="relative z-20 px-10 md:px-20 pb-16 w-full">
 
           {/* Category label */}
-          <p className="hero-fade text-white/60 text-xs uppercase tracking-[0.4em] font-bold mb-4">
+          {/* <p className=" text-xs uppercase tracking-[0.4em] font-bold mb-4">
             Cinematography
+          </p> */}
+               <p className=" text-s text-[#00df9a]  uppercase tracking-[0.4em] font-bold mb-4">
+            The<span className="text-white"> Liminal</span> 
           </p>
 
           {/* Big title */}
-          <h1 className="text-5xl md:text-8xl font-serif italic tracking-tight text-white leading-none mb-10">
-            LOTUS <span className="text-[#00df9a]">PRO</span>
+          <h1 className="text-4xl md:text-7xl font-serif italic tracking-tight text-white leading-none mb-10">
+            LOTUS <span className="text-[#00df9a]">PRODUCTION</span>
+        
           </h1>
 
           {/* Meta row — Client / Year / Role / Website — exactly like TANK */}
           <div className="flex flex-wrap gap-0 text-sm text-white/70">
-            <div className="pr-8 border-r border-white/20 mr-8">
+            {/* <div className="pr-8 border-r border-white/20 mr-8">
               <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Based In</p>
-              <p className="text-white font-medium">Kochi, Kerala</p>
-            </div>
-            <div className="pr-8 border-r border-white/20 mr-8">
+              <p className="text-white font-medium">India</p>
+              
+            </div> */}
+            {/* <div className="pr-8 border-r border-white/20 mr-8">
               <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Est.</p>
               <p className="text-white font-medium">2023</p>
-            </div>
-            <div className="pr-8 border-r border-white/20 mr-8">
+            </div> */}
+            {/* <div className="pr-8 border-r border-white/20 mr-8">
               <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Specialty</p>
               <p className="text-white font-medium">Drone & Events</p>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <p className="text-white/40 text-[10px] uppercase tracking-widest mb-1">Contact</p>
               <Link to="/contact" className="text-[#00df9a] font-medium hover:underline">
                 Get In Touch ↗
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
